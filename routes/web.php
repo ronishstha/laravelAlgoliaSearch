@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/', 'search');
+Route::get('product/{id}', function($id) {
+    $product = \App\Product::find($id);
+    return view('product', compact('product'));
 });
