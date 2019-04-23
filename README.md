@@ -10,5 +10,5 @@ A laravel project that uses and demonstrates algolia for searching
 6. `php artisan migrate`
 7. Run `php artisan tinker` and then `factory('App\Product', 100)->create();` for adding dummy products
 6. Set your Algolia credentials in your .env file. Specifically `ALGOLIA_APP_ID` and `ALGOLIA_SECRET`
-7. `php artisan scout:import "App\Post"`
+7. `php artisan scout:import "App\Product"`
 8. `php artisan serve`
